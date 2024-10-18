@@ -1,0 +1,752 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  background-color: #001f3f;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.nav-logo img {
+  height: 70px;
+  width: 70px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.nav-container ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-container ul li {
+  margin: 41px 0;
+  padding: 0 40px;
+
+}
+
+.nav-container ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+
+/* LOGIN SIGN UP  */
+
+.container {
+  margin-top: 45px;
+  margin-left: 300px;
+
+}
+
+.button {
+  padding: 7px 15px;
+  background-color: blueviolet;
+  float: right;
+  border-radius: 15px;
+  color: white;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
+  margin-right: 10px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #ee930a;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.modal-content h2 {
+  text-align: center;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.close {
+  color: #0a0a0a;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: red;
+  margin-top: -10px;
+  margin-right: -10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Baloo 2", sans-serif;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #ee2c0abb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  margin-left: 105px;
+  font-family: "Baloo 2", sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #ee2c0a;
+  font-weight: bold;
+}
+
+/* HOME PAGE STYLING  */
+
+.Home {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(63, 63, 63);
+  height: 400px;
+}
+
+.ad img {
+  margin: 60px 0px;
+  height: 300px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 5px 2px orangered;
+}
+
+.promo {
+  margin-top: 60px;
+  color: white;
+}
+
+.promo h1 {
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.promo p {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 10px 0;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.join-button button {
+  background-color: rgba(255, 0, 0, 0.671);
+  color: white;
+  outline: none;
+  padding: 10px;
+  border-radius: 11px;
+  margin-top: 40px;
+}
+
+.join-button button:hover {
+  background-color: red;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.exclamation {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+/* ABOUT US PAGE STYLING */
+.About-us {
+  background-color: rgb(41, 40, 40);
+  height: 500px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about h1 {
+  margin-top: 30px;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 10px 0;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.Training-types {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.Box1 {
+  background-color: rgba(63, 63, 63, 0.89);
+  margin-top: 30px;
+  width: 220px;
+  height: 230px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.Box1 h2 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+
+.Box1 p {
+  margin-bottom: 15px;
+  color: white;
+  font-family: "Baloo 2", sans-serif;
+  padding: 13px;
+  text-align: left;
+}
+
+.Box1:hover {
+  background-color: orangered;
+  cursor: pointer;
+  box-shadow: 4px 4px 13px;
+  width: 230px;
+}
+
+.Box1 a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.666;
+}
+
+/* FEATURES PAGE STYLING --- */
+
+.Feature {
+  height: 550px;
+  background-color: rgb(63, 63, 63);
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.slide1 {
+  margin-top: 40px;
+}
+
+.slide1 h1 {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 20px;
+}
+
+.slide2 {
+  margin-top: 40px;
+}
+
+.slide2 img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 8px 10px 25px 5px;
+}
+
+.feature-- h4 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Baloo 2", sans-serif;
+  margin: 18px 0;
+}
+
+.feature-- p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Baloo 2", sans-serif;
+}
+
+.join-btn2 {
+  background-color: rgba(255, 0, 0, 0.671);
+  color: white;
+  outline: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 11px;
+  margin-top: 30px;
+  opacity: 0.777;
+}
+
+.join-btn2:hover {
+  background-color: red;
+  padding: 10px 27px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+/* PLANS PAGE DESIGING  */
+.Plans {
+  background-color: rgb(41, 40, 40);
+  height: 500px;
+}
+
+.Plans h1 {
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Plans>p {
+  padding-top: 10px;
+  font-size: 0.7rem;
+  color: white;
+  font-family: "Baloo 2", sans-serif;
+  text-align: center;
+  /* transform: scaleX(2); */
+  /* overflow: hidden; */
+}
+
+.PLan-- {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.Plan- {
+  background-color: rgba(63, 63, 63, 0.89);
+  width: 270px;
+  height: 290px;
+  border-radius: 15px;
+  text-align: center;
+}
+.Plan-:nth-child(2){
+  width: 290px;
+  height: 310px;
+}
+.Plan->p{
+  font-family: "Baloo 2", sans-serif;
+  padding: 10px;
+  color: white;
+}
+.Plan- ul li {
+  list-style: none;
+  padding: 2px;
+  color: white;
+  font-family: "Baloo 2", sans-serif;
+}
+.Plan-:hover{
+  background-color: orangered;
+  cursor: pointer;
+  box-shadow: 4px 4px 13px;
+  width: 280px;
+}
+.Plan-:nth-child(2):hover{
+  width: 300px;
+}
+.Plan-Selection{
+  margin-top: 30px;
+  border-radius: 15px;
+  background: transparent;
+  color: white;
+  padding: 12px;
+  border: 1px solid white;
+}
+.Plan-Selection:hover{
+  padding: 15px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* PEOPLE PAGE DESIGNING */
+.People{
+  background-color: rgb(63, 63, 63);
+  height: 800px;
+}
+.People h1{
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 40px;
+}
+.People-{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(46 43 45);
+  margin: 20px;
+}
+.People- img{
+height: 120px;
+width: 120px;
+border-radius: 11px;
+}
+.People- p{
+  color: white;
+  font-family: "Baloo 2", sans-serif;
+ font-size: 0.7rem;
+ margin: auto;
+}
+
+/* FOOTER PAGE  */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+}
+
+.socials li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.socials a {
+  color: white;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+/* resposive for mobile screen NAVBAR */
+@media (max-width:768px){
+  .navbar {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .nav-logo {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+  }
+
+  .nav-container ul {
+    flex-direction: column;
+  }
+
+  .nav-container ul li {
+    margin: 5px 10px;
+    padding: 9px 0px;
+  }
+
+  .hamburger {
+    display: block;
+
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .nav-container {
+    margin-top: 45px;
+    position: fixed;
+    left: -100%;
+    top: 55px;
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    background-color: #001f3f;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-container.active {
+    left: 0px;
+  }
+
+  .container {
+    top: -50px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* right: -141px; */
+    margin-left: 135px;
+  }
+
+  .container button {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+
+  }
+
+  /* HOME PAGE STYLING  */
+
+  .Home {
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+  }
+
+  .ad img {
+    margin-top: 50px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .promo h1 {
+    text-align: center;
+  }
+
+  .promo {
+    margin: 10px 0;
+  }
+
+  .promo p {
+    text-align: center;
+  }
+
+  .join-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ABOUT PAGE  */
+  .About-us {
+    height: 600px;
+  }
+
+  .Box1 {
+    width: 160px;
+    height: 140px;
+  }
+
+  .Box1 h2 {
+    font-size: 13px;
+  }
+
+  .Box1 p {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .about h1 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 0.7rem;
+  }
+
+  /* FEATURES PAGE  */
+  .Feature{
+    height: 600px;
+  } 
+  .features {
+    flex-direction: column;
+  }
+
+  .slide1 h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .feature-- h4 {
+    font-size: 1rem;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .feature-- p {
+    font-size: 0.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .join-btn2 {
+    display: block;
+    margin: 3px auto;
+  }
+
+  .slide2 img {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Plans page  */
+  .Plans{
+    height: 850px;
+  }
+  .Plans h1{
+    padding-top: 20px;
+    font-size: 1.7rem;
+  }
+  .Plans>p{
+    padding: 8px;
+    transform: scaleX(1.09);
+    font-size: 0.6rem;
+  }
+  .PLan--{
+    margin-top: 20px;
+  }
+  .Plan- {
+    height: 220px;
+    width: 210px;
+    margin: 10px;
+  }
+  .Plan- ul li{
+    font-size: 0.7rem;
+  }
+  .Plan-:nth-child(2){
+    height: 220px;
+    width: 210px;
+  }
+  .Plan-:hover{
+    background-color: orangered;
+    height: 222px;
+    width: 212px;
+  }
+  .Plan-:nth-child(2):hover{
+    height: 222px;
+    width: 212px;
+  }
+  .Plan-Selection{
+    margin-top: 10px;
+    padding: 6px;
+  }
+  .Plan-Selection:hover{
+    padding: 9px;
+  }
+
+  /* PEOPLE PAGE  */
+.People{
+  height: 620px;
+}
+  .People h1 {
+    padding-top: 10px;
+    font-size: rem;
+  }
+  .People-{
+    margin: 10px;
+  }
+  .People- p{
+   font-size: 0.4rem;
+  }
+  .People- img{
+height: 100px;
+width: 100px;
+  }
+
+  /* FOOTER PAGE  */
+
+  .row-- ul li{
+    font-size: 0.5rem;
+  }
+}
+/* RESPONSIVE DESIGN FOR TABS AND TABLETS  */
+@media  (min-width:820px ) and (max-width: 1024px) {
+  
+  .About-us{
+    height: 710px;
+  }
+  .container{
+    margin-left: -7px;
+    margin-top: 35px;
+  }
+  .nav-container ul li{
+padding: 0 25px;
+/* font-size: 20px; */
+  }
+  .Plans{
+    height: 700px;
+  }
+  .Plan-{
+    height: 240px;
+  }
+  .Plan-:nth-child(2){
+    height: 250px;
+  }
+  .Plan-:hover{
+    height: 242px;
+    width: 216px;
+  }
+  .Plan-:nth-child(2):hover{
+    height: 252px;
+    width: 220px;
+  }
+}
